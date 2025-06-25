@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+*.egg-info/
+
+# Data
+data/
+*.csv
+*.parquet
+
+# Models & Notebooks
+models/
+.ipynb_checkpoints/
+
+# IDE specific
+.vscode/
+.idea/
