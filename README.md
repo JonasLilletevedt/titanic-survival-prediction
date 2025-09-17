@@ -26,7 +26,7 @@ This notebook lays the foundation for the entire project. It is our first intera
 ### `01_data_cleaning_and_feature_engineering`
 Building on the insights from the EDA, this notebook constructs an end-to-end preprocessing pipeline. We start out by creating, and testing new feature-engineered features inspired by the previous notebook. Promising new features, are incorporated in the final pipeline, were we encapsulate all logic in custom transformers, for reusability and to prevent data leakage.
 
-**Key Features Engineered:***
+**Key Features Engineered:**
 *   **Title_feat:** A feature created by extracting the passengers title (e.g., 'Mr' and 'Mrs') from the `Name` column. Turned out be the most predictive feature of all features in the final model.
 *   **FamilySurvivalRate_feat:** A sophisticated feature that identifies family groups through surname and `Pclass`. It then calculates a smoothed survival rate for each passenger, excluding the passenger themselves to avoid data leakage.
 *   **Zone_feat (vertical) and Deck_feat (horizontal):** Extracts the passengers vertical and horizontal cabin location from `Cabin`. 
