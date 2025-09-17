@@ -6,6 +6,8 @@ The primary objective is twofold: to build a competitive model for the Kaggle le
 
 **Final Kaggle Score: 0.80622** (Top 5-10% of legitimate submissions)
 
+You can find pictures of the final score and placements in the `/img` folder.
+
 ---
 
 ## Project Structure
