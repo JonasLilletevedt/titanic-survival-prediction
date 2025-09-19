@@ -2,11 +2,11 @@
 
 This repository contains a complete, end-to-end machine learning project for the classic Kaggle "Titanic - Machine Learning from Disaster" competition. The project divided into three notebooks, each notebook displaying its own part of the full workflow. From initial data exploration to final model deployment and submission. 
 
-The primary objective is twofold: to build a competitive model for the Kaggle leaderboard, and to create interpretable analysis that explains the data, it perks and how the model uses the data to make predictions. My own objective for making this project was to do something fun and educational for both me and possibly for others. As well as serving as a good portfolio piece.
+The primary objective is twofold: to build a competitive model for the Kaggle leaderboard, and to create interpretable analysis that explains the data, it perks and how the model uses the data to make predictions. I built this project as both a learning experience and a resource for others, while also showcasing my end-to-end machine learning workflow. 
 
 **Final Kaggle Score: 0.80622** (Top 5-10% of legitimate submissions)
 
-You can find pictures of the final score and placements in the `/img` folder.
+You can find screenshots of the final score and placements in the `/img` folder.
 
 ---
 
@@ -44,3 +44,13 @@ The last and final notebook of this project, we use the pre-build pipeline creat
 4.  **Ensembling:** A `Voting Classifier` was used and tested combining `SVM` and `XGBoost`.
 5.  **Feature Importance Analysis:** A deep dived into the tuned `XGBoost` model's feature importance to understand it's decision making process.
 6.  **Final Kaggle Submission:** The final `XGBoost` model was re-tuned specifically for the Kaggle competition metric (accuracy) instead of F1-Score. This was the final model used for the submission.
+
+### How to Run
+1.  Clone this repo.
+2.  Install dependencies from `requirements.txt`.
+3.  Open the notebooks in order:
+    *   `00_inital_data_exploration.ipynb`
+    *   `01_data_cleaning_and_feature_engineering.ipynb`
+    *   `02_modeling.ipynb`
+
+**Note:** Some models can take a long time to run. I recommend changing `n_jobs=1` to `n_jobs=-1`. This will trigger some warnings, but it will significantly speed up training by using multiple CPU cores in parallel.
